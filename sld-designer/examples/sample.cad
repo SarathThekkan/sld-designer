@@ -1,0 +1,1568 @@
+{
+ "format": "SLD-CAD",
+ "version": 1,
+ "meta": {
+  "app": "SLD Designer 1.0.0",
+  "modified": "2026-10-26T02:33:44.211Z"
+ },
+ "sheet": {
+  "size": "A3",
+  "orientation": "landscape",
+  "grid": 5,
+  "snap": true,
+  "showGrid": true
+ },
+ "title": {
+  "project": "Demo Industrial Plant",
+  "title": "11/0.4 kV Substation SS-01",
+  "number": "E-SLD-001",
+  "rev": "B",
+  "date": "2026-10-26",
+  "company": "Acme Engineering",
+  "drawn": "SK",
+  "checked": "MJ",
+  "scale": "NTS",
+  "sheet": "1 / 1"
+ },
+ "symbols": {
+  "utility": {
+   "attrs": [
+    {
+     "default": "11 kV",
+     "key": "Voltage"
+    },
+    {
+     "default": "250 MVA",
+     "key": "Fault level"
+    }
+   ],
+   "category": "Sources & Storage",
+   "id": "utility",
+   "keywords": "net netaansluiting distributienet réseau raccordement grid supply feeder source",
+   "name": "Utility / Grid Connection",
+   "prefix": "UT",
+   "prims": [
+    {
+     "fill": false,
+     "h": 20,
+     "t": "rect",
+     "w": 20,
+     "x": -10,
+     "y": -10
+    },
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": 10,
+     "y2": 15
+    },
+    {
+     "closed": false,
+     "fill": false,
+     "pts": [
+      [
+       -4,
+       -7
+      ],
+      [
+       3,
+       -1.5
+      ],
+      [
+       -3,
+       1.5
+      ],
+      [
+       3,
+       6
+      ]
+     ],
+     "t": "poly"
+    },
+    {
+     "closed": true,
+     "fill": true,
+     "pts": [
+      [
+       3,
+       8
+      ],
+      [
+       0.2,
+       4.6
+      ],
+      [
+       5.4,
+       4
+      ]
+     ],
+     "t": "poly"
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": 15
+    }
+   ]
+  },
+  "disconnector": {
+   "attrs": [
+    {
+     "default": "630 A",
+     "key": "Rating"
+    }
+   ],
+   "category": "Switchgear",
+   "id": "disconnector",
+   "keywords": "scheider sectionneur isolator isolateur",
+   "name": "Disconnector / Isolator",
+   "prefix": "DS",
+   "prims": [
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": -10,
+     "y2": -5
+    },
+    {
+     "t": "line",
+     "x1": -2.5,
+     "x2": 2.5,
+     "y1": -5,
+     "y2": -5
+    },
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": -4,
+     "y1": 5,
+     "y2": -4
+    },
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": 5,
+     "y2": 10
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    },
+    {
+     "d": [
+      0,
+      1
+     ],
+     "n": "2",
+     "x": 0,
+     "y": 10
+    }
+   ]
+  },
+  "ct": {
+   "attrs": [
+    {
+     "default": "400/5 A",
+     "key": "Ratio"
+    },
+    {
+     "default": "5P10",
+     "key": "Class"
+    }
+   ],
+   "category": "Measurement & Metering",
+   "id": "ct",
+   "keywords": "stroomtransformator transformateur de courant ta",
+   "name": "Current Transformer",
+   "prefix": "CT",
+   "prims": [
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": -10,
+     "y2": 10
+    },
+    {
+     "cx": 0,
+     "cy": 0,
+     "fill": false,
+     "r": 3.5,
+     "t": "circle"
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    },
+    {
+     "d": [
+      0,
+      1
+     ],
+     "n": "2",
+     "x": 0,
+     "y": 10
+    }
+   ]
+  },
+  "cb": {
+   "attrs": [
+    {
+     "default": "630 A",
+     "key": "Rating"
+    },
+    {
+     "default": "50 kA",
+     "key": "Breaking cap."
+    }
+   ],
+   "category": "Switchgear",
+   "id": "cb",
+   "keywords": "vermogenschakelaar disjoncteur breaker mccb",
+   "name": "Circuit Breaker",
+   "prefix": "CB",
+   "prims": [
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": -10,
+     "y2": -5
+    },
+    {
+     "t": "line",
+     "x1": -2.5,
+     "x2": 2.5,
+     "y1": -5,
+     "y2": -5
+    },
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": -4,
+     "y1": 5,
+     "y2": -4
+    },
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": 5,
+     "y2": 10
+    },
+    {
+     "t": "line",
+     "x1": -6.5,
+     "x2": -1.5,
+     "y1": -6.5,
+     "y2": -1.5
+    },
+    {
+     "t": "line",
+     "x1": -6.5,
+     "x2": -1.5,
+     "y1": -1.5,
+     "y2": -6.5
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    },
+    {
+     "d": [
+      0,
+      1
+     ],
+     "n": "2",
+     "x": 0,
+     "y": 10
+    }
+   ]
+  },
+  "trafo2": {
+   "attrs": [
+    {
+     "default": "1000 kVA",
+     "key": "Rating"
+    },
+    {
+     "default": "11/0.4 kV",
+     "key": "Voltage"
+    },
+    {
+     "default": "Dyn11",
+     "key": "Vector group"
+    },
+    {
+     "default": "6 %",
+     "key": "Impedance"
+    }
+   ],
+   "category": "Transformers",
+   "id": "trafo2",
+   "keywords": "transformator transformateur trafo",
+   "name": "Transformer 2-winding",
+   "prefix": "TR",
+   "prims": [
+    {
+     "cx": 0,
+     "cy": -5,
+     "fill": false,
+     "r": 10,
+     "t": "circle"
+    },
+    {
+     "cx": 0,
+     "cy": 5,
+     "fill": false,
+     "r": 10,
+     "t": "circle"
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "HV",
+     "x": 0,
+     "y": -15
+    },
+    {
+     "d": [
+      0,
+      1
+     ],
+     "n": "LV",
+     "x": 0,
+     "y": 15
+    }
+   ]
+  },
+  "vt": {
+   "attrs": [
+    {
+     "default": "11000/110 V",
+     "key": "Ratio"
+    },
+    {
+     "default": "0.5",
+     "key": "Class"
+    }
+   ],
+   "category": "Measurement & Metering",
+   "id": "vt",
+   "keywords": "spanningstransformator transformateur de tension tp",
+   "name": "Voltage Transformer",
+   "prefix": "VT",
+   "prims": [
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": -10,
+     "y2": -5
+    },
+    {
+     "cx": 0,
+     "cy": 0,
+     "fill": false,
+     "r": 5,
+     "t": "circle"
+    },
+    {
+     "cx": 0,
+     "cy": 5,
+     "fill": false,
+     "r": 5,
+     "t": "circle"
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    }
+   ]
+  },
+  "generator": {
+   "attrs": [
+    {
+     "default": "500 kVA",
+     "key": "Rating"
+    },
+    {
+     "default": "0.4 kV",
+     "key": "Voltage"
+    }
+   ],
+   "category": "Sources & Storage",
+   "id": "generator",
+   "keywords": "generator groupe électrogène noodgenerator aggregaat stroomgroep",
+   "name": "Generator",
+   "prefix": "G",
+   "prims": [
+    {
+     "cx": 0,
+     "cy": 0,
+     "fill": false,
+     "r": 10,
+     "t": "circle"
+    },
+    {
+     "bold": true,
+     "s": "G",
+     "size": 6,
+     "t": "text",
+     "x": 0,
+     "y": -2
+    },
+    {
+     "bold": false,
+     "s": "3~",
+     "size": 2.8,
+     "t": "text",
+     "x": 0,
+     "y": 5.5
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": 10
+    }
+   ]
+  },
+  "motor": {
+   "attrs": [
+    {
+     "default": "75 kW",
+     "key": "Rating"
+    },
+    {
+     "default": "0.4 kV",
+     "key": "Voltage"
+    }
+   ],
+   "category": "Motor Control",
+   "id": "motor",
+   "keywords": "motor moteur asynchrone",
+   "name": "Motor 3~",
+   "prefix": "M",
+   "prims": [
+    {
+     "cx": 0,
+     "cy": 0,
+     "fill": false,
+     "r": 10,
+     "t": "circle"
+    },
+    {
+     "bold": true,
+     "s": "M",
+     "size": 6,
+     "t": "text",
+     "x": 0,
+     "y": -2
+    },
+    {
+     "bold": false,
+     "s": "3~",
+     "size": 2.8,
+     "t": "text",
+     "x": 0,
+     "y": 5.5
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    }
+   ]
+  },
+  "load": {
+   "attrs": [
+    {
+     "default": "",
+     "key": "Description"
+    },
+    {
+     "default": "",
+     "key": "Rating"
+    }
+   ],
+   "category": "Loads & Distribution",
+   "id": "load",
+   "keywords": "verbruiker belasting charge consumer",
+   "name": "Load (arrow)",
+   "prefix": "L",
+   "prims": [
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": -10,
+     "y2": 0
+    },
+    {
+     "closed": true,
+     "fill": true,
+     "pts": [
+      [
+       -2.5,
+       -0.5
+      ],
+      [
+       2.5,
+       -0.5
+      ],
+      [
+       0,
+       5
+      ]
+     ],
+     "t": "poly"
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    }
+   ]
+  },
+  "db": {
+   "attrs": [
+    {
+     "default": "400 A",
+     "key": "Rating"
+    }
+   ],
+   "category": "Loads & Distribution",
+   "id": "db",
+   "keywords": "verdeler tableau panel kast",
+   "name": "Distribution Board",
+   "prefix": "DB",
+   "prims": [
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": -10,
+     "y2": -5
+    },
+    {
+     "fill": false,
+     "h": 10,
+     "t": "rect",
+     "w": 20,
+     "x": -10,
+     "y": -5
+    },
+    {
+     "bold": true,
+     "s": "DB",
+     "size": 4.5,
+     "t": "text",
+     "x": 0,
+     "y": 0
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    }
+   ]
+  },
+  "capacitor": {
+   "attrs": [
+    {
+     "default": "100 kvar",
+     "key": "Rating"
+    }
+   ],
+   "category": "Passive",
+   "id": "capacitor",
+   "keywords": "condensator condensateur",
+   "name": "Capacitor",
+   "prefix": "C",
+   "prims": [
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": -10,
+     "y2": -1.5
+    },
+    {
+     "t": "line",
+     "x1": -6,
+     "x2": 6,
+     "y1": -1.5,
+     "y2": -1.5
+    },
+    {
+     "t": "line",
+     "x1": -6,
+     "x2": 6,
+     "y1": 1.5,
+     "y2": 1.5
+    },
+    {
+     "t": "line",
+     "x1": 0,
+     "x2": 0,
+     "y1": 1.5,
+     "y2": 10
+    }
+   ],
+   "terminals": [
+    {
+     "d": [
+      0,
+      -1
+     ],
+     "n": "1",
+     "x": 0,
+     "y": -10
+    },
+    {
+     "d": [
+      0,
+      1
+     ],
+     "n": "2",
+     "x": 0,
+     "y": 10
+    }
+   ]
+  }
+ },
+ "elements": [
+  {
+   "id": "e2",
+   "type": "rect",
+   "x": 30,
+   "y": 185,
+   "w": 240,
+   "h": 55,
+   "dash": true
+  },
+  {
+   "id": "e1",
+   "type": "rect",
+   "x": 30,
+   "y": 110,
+   "w": 240,
+   "h": 40,
+   "dash": true
+  },
+  {
+   "id": "e3",
+   "type": "sym",
+   "sym": "utility",
+   "x": 60,
+   "y": 30,
+   "rot": 0,
+   "mirror": false,
+   "tag": "GRID",
+   "attrs": {
+    "Voltage": "11 kV",
+    "Fault level": "250 MVA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e4",
+   "type": "sym",
+   "sym": "disconnector",
+   "x": 60,
+   "y": 60,
+   "rot": 0,
+   "mirror": false,
+   "tag": "DS1",
+   "attrs": {
+    "Rating": "630 A"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e5",
+   "type": "sym",
+   "sym": "ct",
+   "x": 60,
+   "y": 80,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CT1",
+   "attrs": {
+    "Ratio": "400/5 A",
+    "Class": "5P10"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e6",
+   "type": "sym",
+   "sym": "cb",
+   "x": 60,
+   "y": 100,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB1",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e7",
+   "type": "bus",
+   "x": 50,
+   "y": 120,
+   "len": 210,
+   "rot": 0,
+   "tag": "BUS-1",
+   "attrs": {
+    "Voltage": "11 kV",
+    "Rating": "1250 A"
+   },
+   "lp": "l"
+  },
+  {
+   "id": "e10",
+   "type": "sym",
+   "sym": "cb",
+   "x": 100,
+   "y": 135,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB2",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e11",
+   "type": "sym",
+   "sym": "trafo2",
+   "x": 100,
+   "y": 165,
+   "rot": 0,
+   "mirror": false,
+   "tag": "TR1",
+   "attrs": {
+    "Rating": "1600 kVA",
+    "Voltage": "11/0.4 kV",
+    "Vector group": "Dyn11",
+    "Impedance": "6 %"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e12",
+   "type": "sym",
+   "sym": "cb",
+   "x": 100,
+   "y": 195,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB4",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e16",
+   "type": "sym",
+   "sym": "cb",
+   "x": 180,
+   "y": 135,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB3",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e17",
+   "type": "sym",
+   "sym": "trafo2",
+   "x": 180,
+   "y": 165,
+   "rot": 0,
+   "mirror": false,
+   "tag": "TR2",
+   "attrs": {
+    "Rating": "1600 kVA",
+    "Voltage": "11/0.4 kV",
+    "Vector group": "Dyn11",
+    "Impedance": "6 %"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e18",
+   "type": "sym",
+   "sym": "cb",
+   "x": 180,
+   "y": 195,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB5",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e22",
+   "type": "sym",
+   "sym": "vt",
+   "x": 225,
+   "y": 135,
+   "rot": 0,
+   "mirror": false,
+   "tag": "VT1",
+   "attrs": {
+    "Ratio": "11000/110 V",
+    "Class": "0.5"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e24",
+   "type": "bus",
+   "x": 50,
+   "y": 215,
+   "len": 210,
+   "rot": 0,
+   "tag": "LV-BUS",
+   "attrs": {
+    "Voltage": "0.4 kV",
+    "Rating": "3200 A"
+   },
+   "lp": "l"
+  },
+  {
+   "id": "e27",
+   "type": "sym",
+   "sym": "generator",
+   "x": 250,
+   "y": 170,
+   "rot": 0,
+   "mirror": false,
+   "tag": "G1",
+   "attrs": {
+    "Rating": "1250 kVA",
+    "Voltage": "0.4 kV"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e28",
+   "type": "sym",
+   "sym": "cb",
+   "x": 250,
+   "y": 195,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB6",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e31",
+   "type": "sym",
+   "sym": "cb",
+   "x": 60,
+   "y": 230,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB7",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e32",
+   "type": "sym",
+   "sym": "motor",
+   "x": 60,
+   "y": 255,
+   "rot": 0,
+   "mirror": false,
+   "tag": "M1",
+   "attrs": {
+    "Rating": "75 kW",
+    "Voltage": "0.4 kV"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e35",
+   "type": "sym",
+   "sym": "cb",
+   "x": 105,
+   "y": 230,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB8",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e36",
+   "type": "sym",
+   "sym": "load",
+   "x": 105,
+   "y": 255,
+   "rot": 0,
+   "mirror": false,
+   "tag": "L1",
+   "attrs": {
+    "Description": "Lights & small power",
+    "Rating": "45 kW"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e39",
+   "type": "sym",
+   "sym": "cb",
+   "x": 160,
+   "y": 230,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB9",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e40",
+   "type": "sym",
+   "sym": "db",
+   "x": 160,
+   "y": 255,
+   "rot": 0,
+   "mirror": false,
+   "tag": "DB-1",
+   "attrs": {
+    "Rating": "250 A"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e43",
+   "type": "sym",
+   "sym": "cb",
+   "x": 200,
+   "y": 230,
+   "rot": 0,
+   "mirror": false,
+   "tag": "CB10",
+   "attrs": {
+    "Rating": "630 A",
+    "Breaking cap.": "50 kA"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e44",
+   "type": "sym",
+   "sym": "capacitor",
+   "x": 200,
+   "y": 255,
+   "rot": 0,
+   "mirror": false,
+   "tag": "C1",
+   "attrs": {
+    "Rating": "300 kvar"
+   },
+   "lp": "r"
+  },
+  {
+   "id": "e47",
+   "type": "text",
+   "x": 210,
+   "y": 20,
+   "s": "SUBSTATION SS-01 - SINGLE LINE DIAGRAM",
+   "size": 6,
+   "bold": true,
+   "anchor": "middle"
+  },
+  {
+   "id": "e48",
+   "type": "text",
+   "x": 150,
+   "y": 115,
+   "s": "11 kV SWITCHGEAR",
+   "size": 3,
+   "bold": true,
+   "anchor": "start"
+  },
+  {
+   "id": "e49",
+   "type": "text",
+   "x": 35,
+   "y": 190,
+   "s": "0.4 kV MAIN LV SWITCHBOARD",
+   "size": 3,
+   "bold": true,
+   "anchor": "start"
+  },
+  {
+   "id": "e50",
+   "type": "text",
+   "x": 290,
+   "y": 40,
+   "s": "NOTES:\n1. Ratings are indicative only.\n2. All cables are XLPE/SWA unless noted.\n3. Standby generator interlocked with\n    incomer breakers CB4 and CB5.",
+   "size": 3.2,
+   "bold": false,
+   "anchor": "start"
+  }
+ ],
+ "wires": [
+  {
+   "id": "w8",
+   "pts": [
+    [
+     60,
+     45
+    ],
+    [
+     60,
+     50
+    ]
+   ],
+   "a": {
+    "el": "e3",
+    "t": 0
+   },
+   "b": {
+    "el": "e4",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w9",
+   "pts": [
+    [
+     60,
+     110
+    ],
+    [
+     60,
+     120
+    ]
+   ],
+   "a": {
+    "el": "e6",
+    "t": 1
+   },
+   "b": {
+    "el": "e7",
+    "s": 10
+   },
+   "label": "3x(1C 300 mm2) XLPE"
+  },
+  {
+   "id": "w13",
+   "pts": [
+    [
+     100,
+     120
+    ],
+    [
+     100,
+     125
+    ]
+   ],
+   "a": {
+    "el": "e7",
+    "s": 50
+   },
+   "b": {
+    "el": "e10",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w14",
+   "pts": [
+    [
+     100,
+     145
+    ],
+    [
+     100,
+     150
+    ]
+   ],
+   "a": {
+    "el": "e10",
+    "t": 1
+   },
+   "b": {
+    "el": "e11",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w15",
+   "pts": [
+    [
+     100,
+     180
+    ],
+    [
+     100,
+     185
+    ]
+   ],
+   "a": {
+    "el": "e11",
+    "t": 1
+   },
+   "b": {
+    "el": "e12",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w19",
+   "pts": [
+    [
+     180,
+     120
+    ],
+    [
+     180,
+     125
+    ]
+   ],
+   "a": {
+    "el": "e7",
+    "s": 130
+   },
+   "b": {
+    "el": "e16",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w20",
+   "pts": [
+    [
+     180,
+     145
+    ],
+    [
+     180,
+     150
+    ]
+   ],
+   "a": {
+    "el": "e16",
+    "t": 1
+   },
+   "b": {
+    "el": "e17",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w21",
+   "pts": [
+    [
+     180,
+     180
+    ],
+    [
+     180,
+     185
+    ]
+   ],
+   "a": {
+    "el": "e17",
+    "t": 1
+   },
+   "b": {
+    "el": "e18",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w23",
+   "pts": [
+    [
+     225,
+     120
+    ],
+    [
+     225,
+     125
+    ]
+   ],
+   "a": {
+    "el": "e7",
+    "s": 175
+   },
+   "b": {
+    "el": "e22",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w25",
+   "pts": [
+    [
+     100,
+     205
+    ],
+    [
+     100,
+     215
+    ]
+   ],
+   "a": {
+    "el": "e12",
+    "t": 1
+   },
+   "b": {
+    "el": "e24",
+    "s": 50
+   },
+   "label": ""
+  },
+  {
+   "id": "w26",
+   "pts": [
+    [
+     180,
+     205
+    ],
+    [
+     180,
+     215
+    ]
+   ],
+   "a": {
+    "el": "e18",
+    "t": 1
+   },
+   "b": {
+    "el": "e24",
+    "s": 130
+   },
+   "label": ""
+  },
+  {
+   "id": "w29",
+   "pts": [
+    [
+     250,
+     180
+    ],
+    [
+     250,
+     185
+    ]
+   ],
+   "a": {
+    "el": "e27",
+    "t": 0
+   },
+   "b": {
+    "el": "e28",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w30",
+   "pts": [
+    [
+     250,
+     205
+    ],
+    [
+     250,
+     215
+    ]
+   ],
+   "a": {
+    "el": "e28",
+    "t": 1
+   },
+   "b": {
+    "el": "e24",
+    "s": 200
+   },
+   "label": ""
+  },
+  {
+   "id": "w33",
+   "pts": [
+    [
+     60,
+     215
+    ],
+    [
+     60,
+     220
+    ]
+   ],
+   "a": {
+    "el": "e24",
+    "s": 10
+   },
+   "b": {
+    "el": "e31",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w34",
+   "pts": [
+    [
+     60,
+     240
+    ],
+    [
+     60,
+     245
+    ]
+   ],
+   "a": {
+    "el": "e31",
+    "t": 1
+   },
+   "b": {
+    "el": "e32",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w37",
+   "pts": [
+    [
+     105,
+     215
+    ],
+    [
+     105,
+     220
+    ]
+   ],
+   "a": {
+    "el": "e24",
+    "s": 55
+   },
+   "b": {
+    "el": "e35",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w38",
+   "pts": [
+    [
+     105,
+     240
+    ],
+    [
+     105,
+     245
+    ]
+   ],
+   "a": {
+    "el": "e35",
+    "t": 1
+   },
+   "b": {
+    "el": "e36",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w41",
+   "pts": [
+    [
+     160,
+     215
+    ],
+    [
+     160,
+     220
+    ]
+   ],
+   "a": {
+    "el": "e24",
+    "s": 110
+   },
+   "b": {
+    "el": "e39",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w42",
+   "pts": [
+    [
+     160,
+     240
+    ],
+    [
+     160,
+     245
+    ]
+   ],
+   "a": {
+    "el": "e39",
+    "t": 1
+   },
+   "b": {
+    "el": "e40",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w45",
+   "pts": [
+    [
+     200,
+     215
+    ],
+    [
+     200,
+     220
+    ]
+   ],
+   "a": {
+    "el": "e24",
+    "s": 150
+   },
+   "b": {
+    "el": "e43",
+    "t": 0
+   },
+   "label": ""
+  },
+  {
+   "id": "w46",
+   "pts": [
+    [
+     200,
+     240
+    ],
+    [
+     200,
+     245
+    ]
+   ],
+   "a": {
+    "el": "e43",
+    "t": 1
+   },
+   "b": {
+    "el": "e44",
+    "t": 0
+   },
+   "label": ""
+  }
+ ],
+ "nextId": 51
+}

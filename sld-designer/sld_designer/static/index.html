@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLD Designer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v6M12 16v6M5 8h14M5 16h14M5 8v8M19 8v8"/></svg> SLD Designer</div>
+  <nav id="menus"></nav>
+  <div id="docname" title="Current drawing"></div>
+</header>
+<div id="toolbar"></div>
+<main id="main">
+  <aside id="palette" aria-label="Symbol library"></aside>
+  <section id="stage">
+    <svg id="canvas" data-tool="select" tabindex="0" aria-label="Drawing canvas"></svg>
+  </section>
+  <aside id="props" aria-label="Properties"></aside>
+</main>
+<footer id="status"><span id="st-coord">0.0, 0.0 mm</span><span id="st-snap"></span><span id="st-zoom"></span><span id="st-hint"></span></footer>
+<div id="toasts" aria-live="polite"></div>
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>

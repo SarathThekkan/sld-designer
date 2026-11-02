@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sld-designer"
+version = "1.0.0"
+description = "Single line diagram editor for electrical systems (symbol library, .cad projects, PDF/DXF export)"
+requires-python = ">=3.9"
+dependencies = ["flask>=2.2", "reportlab>=3.6"]
+
+[project.scripts]
+sld-designer = "sld_designer.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["sld_designer*"]
+
+[tool.setuptools.package-data]
+sld_designer = ["static/*", "fonts/*"]
